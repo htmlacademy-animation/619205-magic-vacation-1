@@ -36,9 +36,15 @@
     padding: 5rem 2rem 0 5rem;
   }
 
+  .slider__item-text {
+    opacity: 0;
+    animation: slideIn 0.4s ease-out 0.4s 1 forwards;
+  }
+
   &:nth-child(even) {
     .slider__item-text {
       align-self: flex-end;
+      animation-delay: 0.6s;
 
       @media (max-width: $mobile) and (orientation: landscape) {
         align-self: flex-start;
@@ -91,6 +97,7 @@
 }
 
 .slider__item-text {
+  position: relative;
   margin-top: 3.6rem;
   margin-bottom: 0;
   max-width: 34rem;
