@@ -3,6 +3,8 @@ export default () => {
   let menuToggler = document.querySelector(`.js-menu-toggler`);
   let menuLinks = document.querySelectorAll(`.js-menu-link`);
 
+  menuLinks[0].classList.add('active');
+
   if (menuToggler) {
     menuToggler.addEventListener(`click`, function () {
       if (header.classList.contains(`page-header--menu-opened`)) {
