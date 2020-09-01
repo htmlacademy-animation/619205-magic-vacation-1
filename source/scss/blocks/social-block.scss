@@ -35,6 +35,10 @@
     background-color: $c-light;
     border: 2px solid $c-light;
     z-index: -1;
+    transition-property: width, height, color;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    transition-timing-function: linear;
   }
 
   svg {
@@ -168,6 +172,7 @@
   color: $c-light;
   border: 2px solid transparent;
   border-radius: 50%;
+  transition: color 0.25s ease-in-out;
 
   @media (min-width: $stop-scaling) {
     width: 40px;
